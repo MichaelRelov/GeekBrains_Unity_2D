@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class ParallaxManager
 {
-    private const float Coef = 1;
+    private const float Coef = 0.8f;
 
     private Vector3 _backStartPosition;
     private Vector3 _cameraStartPosition;
     private Camera _camera;
     private Transform _backTransform;
-
 
     public ParallaxManager(Camera camera, Transform backTransform)
     {
@@ -22,5 +21,4 @@ public class ParallaxManager
     {
         _backTransform.position = _backStartPosition + (_camera.transform.position - _cameraStartPosition) * Coef;
     }
-
 }
