@@ -7,4 +7,3 @@ using UnityEngine;
     public Track Track;
     public List<Sprite> Sprites = new List<Sprite>();
 }
-
