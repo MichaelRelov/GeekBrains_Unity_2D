@@ -7,7 +7,7 @@ public class CharacterView : MonoBehaviour
     [Header("Settings")]
 
     [SerializeField] private float _walkSpeed = 1f;
-    [SerializeField] private float _animationSpeed = 3f;
+    [SerializeField] private float _animationSpeed = 12f;
     [SerializeField] private float _jumpStartSpeed = 2f;
     [SerializeField] private float _movingThresh = 0.1f;
     [SerializeField] private float _flyThresh = 0.4f;
