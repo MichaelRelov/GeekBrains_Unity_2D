@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public enum Track
 {
     walk,
@@ -5,3 +6,11 @@ public enum Track
     jump,
     rotation
 }
+=======
+public enum Track
+{
+    idle,
+    walk,
+    jump
+}
+>>>>>>> main
