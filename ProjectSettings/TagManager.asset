@@ -3,6 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
+  tags: []
+=======
   tags:
   - Enemy
   - Weapon
@@ -17,6 +20,7 @@ TagManager:
   - SmokeTrail
   - Spawner
   - GunFlash
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
@@ -24,10 +28,17 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< HEAD
+  - Well
+  - Ground
+  - 
+  - 
+=======
   - 
   - 
   - Enemy
   - 
+>>>>>>> main
   - 
   - 
   - 

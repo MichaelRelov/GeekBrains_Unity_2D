@@ -13,16 +13,14 @@ public class SpriteAnimator
 
     public void StartAnimation(SpriteRenderer spriteRenderer, Track track, bool loop, float speed)
     {
-        if(_activeAnimations.TryGetValue(spriteRenderer, out var animation))
+        if (_activeAnimations.TryGetValue(spriteRenderer, out var animation))
         {
             animation.Loop = loop;
             animation.Speed = speed;
             animation.Sleeps = false;
 
-            if(animation.Track == track)
-            {
+            if (animation.Track == track)
                 return;
-            }
 
             animation.Track = track;
             animation.Sprites = _config.Sequences.Find(sequence => sequence.Track == track).Sprites;
@@ -43,14 +41,12 @@ public class SpriteAnimator
     public void StopAnimation(SpriteRenderer sprite)
     {
         if (_activeAnimations.ContainsKey(sprite))
-        {
             _activeAnimations.Remove(sprite);
-        }
     }
 
     public void Update()
     {
-        foreach(var animation in _activeAnimations)
+        foreach (var animation in _activeAnimations)
         {
             animation.Value.Update();
             animation.Key.sprite = animation.Value.Sprites[(int)animation.Value.Counter];
